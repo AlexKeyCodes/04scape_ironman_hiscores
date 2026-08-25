@@ -33,6 +33,8 @@ Core concepts:
 
 - `bin/setup` — install deps, prepare DB
 - `bin/dev` — run the dev server
+- `bin/check` — run the full CI suite locally (brakeman, bundler-audit,
+  importmap audit, rubocop, rspec). Run before pushing.
 - `bundle exec rspec` — run tests (`bundle exec rspec spec/models/foo_spec.rb` for one file)
 - `bin/rubocop` — lint (rubocop-rails-omakase)
 - `bin/brakeman` — security scan
