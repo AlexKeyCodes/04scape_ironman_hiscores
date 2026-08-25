@@ -19,8 +19,6 @@ Substantial work gets a branch file at `docs/todo/<branch>.md` that this line li
 
 ## Now
 
-- [ ] Add RSpec to app (replace Minitest)
-
 ## Next
 
 - [ ] Player model + roster CRUD (admin-only)
@@ -39,6 +37,7 @@ Substantial work gets a branch file at `docs/todo/<branch>.md` that this line li
 
 ## Done
 
+- [x] 2026-08-25 — Added RSpec (replaced Minitest; removed test/, added spec/)
 - [x] 2026-08-25 — Researched Lost City hiscores API (official JSON API exists; documented in CLAUDE.md)
 - [x] 2026-08-25 — `rails new` (Rails 8.1, SQLite, importmaps, custom CSS; skipped mailer/mailbox/text/storage/jbuilder)
 - [x] 2026-08-25 — CLAUDE.md with project overview, API reference, and coding patterns

@@ -23,7 +23,7 @@ Core concepts:
 - SQLite for the database (also backs Solid Queue / Solid Cache / Solid Cable)
 - Import maps + Hotwire (Turbo/Stimulus) — no JS bundler
 - Propshaft with plain custom CSS — no Tailwind
-- Minitest + Capybara for tests
+- RSpec (rspec-rails) + Capybara for tests
 - Solid Queue for background/recurring jobs (hiscores refresh)
 - Kamal + Thruster for deployment
 - Skipped on purpose: Action Mailer, Action Mailbox, Action Text,
@@ -33,8 +33,7 @@ Core concepts:
 
 - `bin/setup` — install deps, prepare DB
 - `bin/dev` — run the dev server
-- `bin/rails test` — run tests (`bin/rails test test/models/foo_test.rb` for one file)
-- `bin/rails test:system` — system tests
+- `bundle exec rspec` — run tests (`bundle exec rspec spec/models/foo_spec.rb` for one file)
 - `bin/rubocop` — lint (rubocop-rails-omakase)
 - `bin/brakeman` — security scan
 
