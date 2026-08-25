@@ -30,8 +30,8 @@ everything you need.
 ## Getting started
 
 ```bash
-git clone <repo-url>
-cd ironscores
+git clone https://github.com/AlexKeyCodes/04scape_ironman_hiscores.git
+cd 04scape_ironman_hiscores
 bin/setup   # installs gems, prepares the database
 bin/dev     # starts the dev server on http://localhost:3000
 ```
@@ -65,4 +65,4 @@ the public Lost City hiscores API and remains the work of that project.
 
 ## License
 
-TBD.
+[MIT](LICENSE).
