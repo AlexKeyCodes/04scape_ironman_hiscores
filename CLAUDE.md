@@ -67,6 +67,18 @@ Critical caveats:
 - Usernames use underscores for spaces (e.g. `the_inducted`). The player
   endpoint cannot be used to verify an account exists.
 
+## Auth
+
+Hand-rolled, no email anywhere. `User` model (username + `has_secure_password`
++ role enum, only `admin` for now), cookie session via `session[:user_id]`,
+`Authentication` controller concern (`current_user`, `require_authentication`,
+`start_new_session_for`, `terminate_session`). Protected controllers opt in
+with `before_action :require_authentication` — it is not global.
+
+The admin is created in the console (no signup, no password reset):
+
+    User.create!(username: "...", password: "...", role: :admin)
+
 ## Task management
 
 Work is tracked in two layers: `docs/TODO.md` (high-level index: Now / Next /

@@ -19,8 +19,6 @@ Substantial work gets a branch file at `docs/todo/<branch>.md` that this line li
 
 ## Now
 
-- [ ] Auth: admin can sign in — see docs/todo/auth.md
-
 ## Next
 - [ ] API: PORO service class to pull hiscores data from the Lost City API
 - [ ] Player backend: migration + model for players
@@ -37,6 +35,7 @@ Substantial work gets a branch file at `docs/todo/<branch>.md` that this line li
 
 ## Done
 
+- [x] 2026-08-25 — Auth: admin sign in/out (User model, Authentication concern, sessions)
 - [x] 2026-08-25 — README written for open source (license still TBD)
 - [x] 2026-08-25 — bin/check runs the full CI suite locally; CI switched from Minitest to RSpec
 - [x] 2026-08-25 — Added RSpec (replaced Minitest; removed test/, added spec/)
