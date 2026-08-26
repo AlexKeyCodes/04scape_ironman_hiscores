@@ -19,9 +19,9 @@ Substantial work gets a branch file at `docs/todo/<branch>.md` that this line li
 
 ## Now
 
-## Next
+- [ ] Auth: admin can sign in — see docs/todo/auth.md
 
-- [ ] Auth: admin can sign in (hand-rolled sessions, single console-created admin)
+## Next
 - [ ] API: PORO service class to pull hiscores data from the Lost City API
 - [ ] Player backend: migration + model for players
 - [ ] Populate player data using the API on a schedule (Solid Queue recurring job)
