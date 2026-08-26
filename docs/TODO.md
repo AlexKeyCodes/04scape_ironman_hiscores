@@ -21,12 +21,12 @@ Substantial work gets a branch file at `docs/todo/<branch>.md` that this line li
 
 ## Next
 
-- [ ] Player model + roster CRUD (admin-only)
-- [ ] Admin auth: hand-rolled sessions, single console-created admin
-- [ ] HiscoreFetchService: pull player stats from the Lost City API into snapshots
-- [ ] Recurring Solid Queue job to refresh all tracked players
-- [ ] Ironman leaderboard page (overall + per-skill) from latest snapshots
-- [ ] Custom CSS matching the Lost City hiscores look
+- [ ] Auth: admin can sign in (hand-rolled sessions, single console-created admin)
+- [ ] API: PORO service class to pull hiscores data from the Lost City API
+- [ ] Player backend: migration + model for players
+- [ ] Populate player data using the API on a schedule (Solid Queue recurring job)
+- [ ] Admin player creation: CRUD actions in admin for the Player model
+- [ ] Hiscores page matching 2004.lostcity.rs/hiscores (includes the custom CSS)
 
 ## Someday
 
