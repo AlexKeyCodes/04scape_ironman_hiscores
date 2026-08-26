@@ -1,0 +1,10 @@
+<h1>Ironscores</h1>
+
+<p>Hiscores for Lost City ironmen. Coming soon.</p>
+
+<% if authenticated? %>
+  <p>
+    Signed in as <%= current_user.username %>.
+    <%= button_to "Sign out", session_path, method: :delete %>
+  </p>
+<% end %>

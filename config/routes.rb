@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   resource :session, only: %i[new create destroy]
 
   # Temporary root until the hiscores page exists.
-  root "sessions#new"
+  root "home#show"
 end
