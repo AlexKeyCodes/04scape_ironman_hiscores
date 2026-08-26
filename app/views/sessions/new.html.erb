@@ -1,0 +1,18 @@
+<h1>Sign in</h1>
+
+<% if authenticated? %>
+  <p>Signed in as <%= current_user.username %>.</p>
+  <%= button_to "Sign out", session_path, method: :delete %>
+<% else %>
+  <%= form_with url: session_path do |form| %>
+    <div>
+      <%= form.label :username, "Username" %>
+      <%= form.text_field :username, required: true, autofocus: true, autocomplete: "username" %>
+    </div>
+    <div>
+      <%= form.label :password, "Password" %>
+      <%= form.password_field :password, required: true, autocomplete: "current-password" %>
+    </div>
+    <%= form.submit "Sign in" %>
+  <% end %>
+<% end %>
